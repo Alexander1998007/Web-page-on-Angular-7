@@ -1,23 +1,25 @@
 a {
-    text-decoration: none;
-    color: white;
-}
- 
-a:hover, a:active{
-    color: lightgray;
-}
- 
-.nav-caption{
-    display: inline-block;
-    padding-left: 6px;
+  text-decoration: none;
+  color: white;
 }
 
-span{
-    text-decoration: none;
-    color: black;
-    font-size: 10px; //розмір шрифта в хедері
+a:hover,
+a:active {
+  color: lightgray;
 }
 
-span:hover, span:active{
-    color: grey;
+.nav-caption {
+  display: inline-block;
+  padding-left: 6px;
+}
+
+span {
+  text-decoration: none;
+  color: black;
+  font-size: 10px; //розмір шрифта в хедері
+}
+
+span:hover,
+span:active {
+  color: grey;
 }

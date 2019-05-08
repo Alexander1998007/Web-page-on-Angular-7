@@ -1,15 +1,13 @@
-mat-sidenav-container, mat-sidenav {
-    height: 100%;
+mat-sidenav-container,
+mat-sidenav,
+mat-sidenav-content {
+  height: 100%;
 }
 
-mat-sidenav-content{
-    background: url(../assets/images/background.png) no-repeat center/cover;
-}
- 
 mat-sidenav {
-    width: 250px;
+  width: 250px;
 }
 
-app-sidenav-list{
-    position: fixed;
+app-sidenav-list {
+  position: fixed;
 }

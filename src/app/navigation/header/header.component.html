@@ -1,26 +1,30 @@
 <mat-toolbar color="primary">
-    <div fxHide.gt-xs>
-      <button mat-icon-button (click)="onToggleSidenav()">
-          <mat-icon>menu</mat-icon>
-      </button>
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
   </div>
-  <div>
-      <a routerLink="/home">Owner-Account</a>
+  <div class="logo">
+    <img src="../../../assets/images/logo.png" />
+    <!--<a routerLink="/home">Owner-Account</a>-->
   </div>
   <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs fxLayout>
-      <ul fxLayout fxLayoutGap="15px" class="navigation-items">
-        <li>
-            <a routerLink="/owner">ALL PRODUCTS</a>
-        </li>
-        <li>
-            <a routerLink="/owner">ABOUT US</a>
-        </li>
-        <li>
-              <a routerLink="/owner">LOG IN</a>
-          </li>
-          <li>
-              <a routerLink="/account">SIGN UP</a>
-          </li>
-      </ul>
+    <ul fxLayout class="navigation-items">
+      <li>
+        <a routerLink="/owner">ALL PRODUCTS</a>
+      </li>
+      <li>
+        <a routerLink="/owner">ABOUT US</a>
+      </li>
+      <li>
+        <a routerLink="/owner">LOG IN</a>
+      </li>
+      <li >
+            <div class="vl"></div>
+      </li>
+      <li class="last-li">
+        <a routerLink="/account">SIGN UP</a>
+      </li>
+    </ul>
   </div>
 </mat-toolbar>

@@ -1,26 +1,50 @@
 a {
-    text-decoration: none;
-    color: black;
-    font-size: 10px; //розмір шрифта в хедері
+  text-decoration: none;
+  color: black;
+  font-size: 10px; //розмір шрифта в хедері
 }
- 
-a:hover, a:active{
-    color: grey;
+
+a:hover,
+a:active {
+  color: grey;
 }
- 
-.navigation-items{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+
+.navigation-items {
+  list-style-type: none;
+  padding: 0;
 }
- 
-mat-toolbar{
-    position: fixed;
-    height: 50px//висота хедера
+
+mat-toolbar {
+  position: fixed;
+  height: 50px //висота хедера;
 }
- 
-@media(max-width: 959px){   
-    mat-toolbar{
-        height: 50px; //висота хедера 
-    }
+
+@media (max-width: 959px) {
+  mat-toolbar {
+    height: 50px; //висота хедера
+  }
+}
+
+li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.vl {
+  border-left: 2px solid grey;
+  height: 100%;
+}
+
+.last-li {
+  margin-right: 8vw;
+}
+
+.logo {
+  margin-left: 10%;
+  height: inherit;
+}
+
+img {
+  width: 75%;
+  height: inherit;
 }
