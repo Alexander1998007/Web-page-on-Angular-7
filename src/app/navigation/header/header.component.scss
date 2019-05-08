@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'RalewayMedium';
+  src: url('../../../assets/fonts/Raleway-Medium.ttf');
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -26,12 +31,13 @@ mat-toolbar {
 }
 
 li {
+  font-family: 'RalewayMedium';
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .vl {
-  border-left: 2px solid grey;
+  border-left: 2px solid #b6b7ba;
   height: 100%;
 }
 

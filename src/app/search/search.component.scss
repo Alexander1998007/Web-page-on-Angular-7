@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'RalewayBold';
+  src: url('../../assets/fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'RalewayLight';
+  src: url('../../assets/fonts/Raleway-Light.ttf');
+}
+
+.box {
+  padding-top: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.flex-item {
+  padding: 1px;
+}
+
+.part2 {
+  color: #0e7200;
+  padding-left: 0.5vw;
+}
+
+.part1 {
+  color: #484848;
+
+}
+
+.innovate {
+  color: #484848;
+  margin-top: 1vh;
+}
+
+.font1{
+  
+  font-size: 3vw;
+  font-family: 'RalewayBold';
+}
+
+.font2{
+  font-size: 1vw;
+  font-family: 'RalewayLight';
+}
+
+.d1 {
+ margin-top: 5vh;
+}
+.d1 input {
+  width: 30vw;
+  height: 8vh;
+  padding-left: 10px;
+  border: 0px;
+  outline: none;
+  background: white;
+  color: #9E9C9C;
+}
+.d1 button { 
+  font-family: RalewayBold;
+  font-size: 8px;
+  color: white;
+  right: 0px;
+  width: 8vw;
+  height: 8vh;
+  border: none;
+  background: #4dadbb;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.d1 button:before {
+  color: gray;
+}
