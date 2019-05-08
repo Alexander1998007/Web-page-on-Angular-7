@@ -1,15 +1,13 @@
-<section class="one">
-  <app-search></app-search>
-</section>
-<section class="two">
-  <h6>Section 2</h6>
-</section>
-<section class="three">
-  <h6>Section 3</h6>
-</section>
-<section class="four">
-  <h6>Section 4</h6>
-</section>
-<section class="five">
-  <h6>Section 5</h6>
-</section>
+<app-layout>
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav role="navigation" >
+        <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
+      </mat-sidenav>
+      <mat-sidenav-content >
+        <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+        <main>
+          <router-outlet></router-outlet>
+        </main>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </app-layout>
