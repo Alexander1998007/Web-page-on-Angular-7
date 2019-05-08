@@ -1,5 +1,9 @@
-mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+mat-sidenav-container, mat-sidenav {
     height: 100%;
+}
+
+mat-sidenav-content{
+    background: url(../../assets/images/background.png) no-repeat center/cover;
 }
  
 mat-sidenav {
