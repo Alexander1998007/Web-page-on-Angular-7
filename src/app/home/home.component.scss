@@ -4,7 +4,7 @@
 	background-size: cover;
 }
 .two {
-	height: 100vh;
+	height: 95vh;
 	background-color: #f7f7f7;
 }
 .three {
@@ -18,4 +18,9 @@
 .five {
 	height: 5vh;
 	background-color: #272727;
+}
+
+app-products{
+	height: inherit;
+	width: inherit;
 }

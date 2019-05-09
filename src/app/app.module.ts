@@ -11,10 +11,11 @@ import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
-    AppComponent, SearchComponent, LayoutComponent, HomeComponent, HeaderComponent, SidenavListComponent, NotFoundComponent
+    AppComponent, SearchComponent, LayoutComponent, HomeComponent, HeaderComponent, SidenavListComponent, NotFoundComponent, ProductsComponent
   ],
   imports: [
     BrowserModule,
