@@ -12,10 +12,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductsComponent } from './products/products.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent, SearchComponent, LayoutComponent, HomeComponent, HeaderComponent, SidenavListComponent, NotFoundComponent, ProductsComponent
+    AppComponent, SearchComponent, LayoutComponent, HomeComponent, HeaderComponent, SidenavListComponent, NotFoundComponent, ProductsComponent, FooterComponent
   ],
   imports: [
     BrowserModule,

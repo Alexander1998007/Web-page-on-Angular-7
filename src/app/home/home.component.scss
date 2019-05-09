@@ -12,15 +12,20 @@
 	background-color: #4dadbb;
 }
 .four {
-	height: 15vh;
+	height: 23.6vh;
 	background-color: #323232;
 }
 .five {
-	height: 5vh;
+	height: 6.2vh;
 	background-color: #272727;
 }
 
 app-products{
+	height: inherit;
+	width: inherit;
+}
+
+app-footer{
 	height: inherit;
 	width: inherit;
 }
