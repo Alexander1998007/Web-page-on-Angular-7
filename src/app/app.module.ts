@@ -13,10 +13,12 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { BottomMenuComponent } from './bottom-menu/bottom-menu.component';
 
 @NgModule({
   declarations: [
-    AppComponent, SearchComponent, LayoutComponent, HomeComponent, HeaderComponent, SidenavListComponent, NotFoundComponent, ProductsComponent, FooterComponent
+    AppComponent, SearchComponent, LayoutComponent, HomeComponent, HeaderComponent, SidenavListComponent, NotFoundComponent, ProductsComponent, FooterComponent, CarouselComponent, BottomMenuComponent
   ],
   imports: [
     BrowserModule,

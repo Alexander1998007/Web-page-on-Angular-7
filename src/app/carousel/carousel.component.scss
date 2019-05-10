@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "RalewayMedium";
+  src: url("../../assets/fonts/Raleway-Medium.ttf");
+}
+
+.main-div {
+  height: inherit;
+  width: inherit;
+}
+
+.str-testimonials {
+  display: flex;
+  justify-content: center;
+  font-family: RalewayMedium;
+  font-size: 1.5vw;
+  /* margin-top: 7vh; */
+  padding-top: 7vh;
+  color: #f7f6f9;
+}
+
+.str-customers-told {
+  display: flex;
+  justify-content: center;
+  font-family: RalewayMedium;
+  font-size: 0.8vw;
+  color: #f7f6f9;
+  margin-top: 2vh;
+}
+

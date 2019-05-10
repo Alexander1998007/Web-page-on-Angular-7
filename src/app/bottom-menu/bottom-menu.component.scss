@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "RalewayMedium";
+  src: url("../../assets/fonts/Raleway-Medium.ttf");
+}
+
+.main-div {
+  height: inherit;
+  width: inherit;
+}
+
+.img-box {
+  padding-top: 4vh;
+  display: flex;
+  justify-content: center;
+  align-self: auto;
+  height: 10vh;
+}
+
+img {
+  height: inherit;
+  width: auto;
+}
+
+a {
+  font-family: 'RalewayMedium';
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: 1.5vh; //розмір шрифта
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+a:hover,
+a:active {
+  color: grey;
+}
+
+.navigation-items {
+  padding-top: 7vh;
+  display: flex;
+  justify-content: center;
+  align-self: auto;
+  list-style-type: none;
+  -webkit-margin-end: 40px;
+  margin-inline-end: 40px;
+}
