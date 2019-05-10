@@ -10,7 +10,7 @@ import { MatTabsModule, MatSidenavModule, MatToolbarModule, MatIconModule, MatBu
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
   ],
   exports: [
     MatTabsModule,

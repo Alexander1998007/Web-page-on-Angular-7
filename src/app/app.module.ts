@@ -15,10 +15,13 @@ import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { BottomMenuComponent } from './bottom-menu/bottom-menu.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
-    AppComponent, SearchComponent, LayoutComponent, HomeComponent, HeaderComponent, SidenavListComponent, NotFoundComponent, ProductsComponent, FooterComponent, CarouselComponent, BottomMenuComponent
+    AppComponent, SearchComponent, LayoutComponent, HomeComponent, HeaderComponent,
+    SidenavListComponent, NotFoundComponent, ProductsComponent, FooterComponent,
+    CarouselComponent, BottomMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,8 @@ import { BottomMenuComponent } from './bottom-menu/bottom-menu.component';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
+
+    CarouselModule
   ],
 
   providers: [
