@@ -1,13 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss']
 })
-export class CarouselComponent implements OnInit {
-
-  constructor() { }
+export class CarouselComponent{
 
    customOptions: any = {
     loop: true,
@@ -16,7 +14,7 @@ export class CarouselComponent implements OnInit {
     pullDrag: false,
     dots: false,
     navSpeed: 700,
-    navText: ['', ''],
+    navText: ['prev', 'next'],
     responsive: {
       0: {
         items: 1
@@ -27,22 +25,8 @@ export class CarouselComponent implements OnInit {
       800: {
         items: 3
       },
-      1200: {
-        items: 4
-      },
-      1600: {
-        items: 5
-      },
-      2000: {
-        items: 6
-      },
-      2400: {
-        items: 7
-      },
     },
-    nav: true
+    nav: true,
+    center: true
   };
-
-  ngOnInit() {
-  }
 }

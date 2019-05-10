@@ -11,3 +11,14 @@
 	background: transparent;
     color: black;
 }
+
+// редагування формату для всіх активних вкладок на каруселі
+.owl-theme .active {
+	
+  }
+
+// редагування формату для центальної вкладки на каруселі
+.owl-theme .center .carousel-item{
+	background-color: red;
+
+  }
