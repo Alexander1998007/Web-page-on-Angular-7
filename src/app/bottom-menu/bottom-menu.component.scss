@@ -4,30 +4,30 @@
 }
 
 .main-div {
-  height: inherit;
-  width: inherit;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
 
 .img-box {
-  padding-top: 4vh;
-  display: flex;
-  justify-content: center;
-  align-self: auto;
-  height: 10vh;
+  width: 65px; 
 }
 
 img {
-  height: inherit;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 a {
+  margin: 13px;
   font-family: 'RalewayMedium';
+  text-transform: uppercase;
   text-decoration: none;
   color: #f7f7f7;
-  font-size: 1.5vh; //розмір шрифта
-  padding-left: 1vw;
-  padding-right: 1vw;
+  font-size: 0.6rem;
 }
 
 a:hover,
@@ -36,11 +36,11 @@ a:active {
 }
 
 .navigation-items {
-  padding-top: 7vh;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-self: auto;
   list-style-type: none;
-  -webkit-margin-end: 40px;
-  margin-inline-end: 40px;
+  padding: 0%;
+  margin-top: 20px;
 }
