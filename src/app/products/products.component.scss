@@ -6,54 +6,57 @@
 .main-div {
   height: inherit;
   width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
 .str-products {
-  display: flex;
-  justify-content: center;
   font-family: RalewayMedium;
-  font-size: 1.5vw;
-  margin-top: 6vh;
+  font-size: 1.5rem;
+  margin-top: 2%;
+  text-align: center;
 }
 
 .str-list-products {
-  display: flex;
-  justify-content: center;
   font-family: RalewayMedium;
-  font-size: 0.8vw;
+  font-size: 0.8rem;
   color: #6d6d6d;
-  margin-top: 2vh;
+  margin-top: 1%;
+  text-align: center;
 }
 
 .img-container {
-  margin-top: 1vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-
-  height: 35vh;
+  height: 100%;
+  width: 80%;
 }
 
 .img-box {
-  padding: 7px;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  margin-top: 2vw;
-
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 220px;
   font-family: RalewayMedium;
-  font-size: 0.8vw;
+  font-size: 0.8rem;
   color: #6d6d6d;
+  margin: 25px;
+  padding: 5px;
+  background-color: #ffffff;
+
 }
 
 img {
   height: auto;
-  width: 16vw;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 p {
@@ -64,8 +67,8 @@ p {
 a {
   display: flex;
   justify-content: center;
-  margin-top: 6vh;
   font-family: RalewayMedium;
-  font-size: 0.8vw;
+  font-size: 0.7rem;
   color: #62b6c2;
+  margin-bottom: 2%;
 }
