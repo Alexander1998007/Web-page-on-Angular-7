@@ -1,9 +1,10 @@
 .footer-text{
     height: inherit;
+    width: 100%;
     display: flex;
-    padding-top: 2.5vh;
+    align-items: center;
     justify-content: center;
     font-family: RalewayMedium;
-    font-size: 1.7vh;
+    font-size: 0.6rem;
     color: #f7f7f7;
 }
