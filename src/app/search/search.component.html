@@ -15,11 +15,14 @@
     </div>
     <div class="search">
       <form>
-        <select>
-          <option value="Categoty">Categoty</option>
-          <option value="Categoty1">Categoty1</option>
-          <option value="Categoty2">Categoty2</option>
-        </select>
+        <mat-form-field>
+          <mat-label>Categoty</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let category of categoties" [value]="category.value">
+              {{category.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
         <input type="text" placeholder="">
         <button class="button" type="submit">START SEARCHING</button>
       </form>

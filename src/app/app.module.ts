@@ -29,7 +29,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-
     CarouselModule
   ],
 

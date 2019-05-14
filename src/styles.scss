@@ -1,22 +1,9 @@
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
 @import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "assets/fonts/fonts-styles.scss";
 
 * {
   margin: 0;
   box-sizing: border-box;
-}
-
-.mat-toolbar.mat-primary {
-  background: transparent;
-  color: black;
-}
-
-// редагування формату для всіх активних вкладок на каруселі
-.owl-theme .active {
-}
-
-// редагування формату для центальної вкладки на каруселі
-.owl-theme .center .carousel-item {
-  background-color: red;
 }
