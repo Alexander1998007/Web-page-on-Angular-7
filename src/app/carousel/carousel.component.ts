@@ -16,7 +16,7 @@ export class CarouselComponent{
     navSpeed: 700,
     navText: ['prev', 'next'],
     responsive: {
-      0: {
+      10: {
         items: 1
       },
       400: {

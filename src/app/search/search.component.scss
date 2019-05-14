@@ -20,7 +20,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-family: "RalewayBold";
   width: 100%;
   text-align: center;
@@ -45,7 +45,7 @@
   text-transform: uppercase;
   color: #484848;
   margin: 5px;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   font-family: "RalewayLight";
 }
 
@@ -78,9 +78,10 @@ form {
 
 @media (max-width: 425px) {
   .search {
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 100%;
+    width: 98%;
+  }
+  .flex-container-row {
+    font-size: 98%;
   }
 }
 
@@ -92,9 +93,10 @@ form {
   background: white;
   border-left-width: 1px;
   border-color: #ffffff;
+  padding: 10px;
   color: #9e9c9c;
   font-family: RalewayMedium;
-  font-size: 0.6rem;
+  font-size: 0.6em;
   width: 80%;
   &:focus {
     outline: none;
@@ -106,7 +108,7 @@ form {
   color: white;
   text-transform: uppercase;
   font-family: RalewayMedium;
-  font-size: 0.6rem;
+  font-size: 0.6em;
   background: #4dadbb;
   border-radius: 0 8px 8px 0;
   cursor: pointer;
@@ -123,7 +125,7 @@ form {
   border-radius: 8px 0 0 8px;
   text-decoration: none;
   font-family: RalewayMedium;
-  font-size: 0.6rem;
+  font-size: 0.6em;
   color: #838383;
   height: inherit;
   background: white;
@@ -146,6 +148,10 @@ form {
   padding-bottom: 0px;
 }
 
+::ng-deep .mat-form-field-infix{
+  border-top: 0px;
+}
+
 ::ng-deep .mat-select-value {
   color: #838383;
 }
@@ -164,7 +170,7 @@ form {
   align-items: center;
   margin: 10px;
   font-family: RalewayBold;
-  font-size: 0.6rem;
+  font-size: 0.6em;
   color: #2d8421;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
