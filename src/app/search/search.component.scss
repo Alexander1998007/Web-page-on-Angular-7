@@ -91,7 +91,7 @@ form {
   outline: none;
   background: white;
   border-left-width: 1px;
-  border-left-color: #e6e7eb;
+  border-color: #ffffff;
   color: #9e9c9c;
   font-family: RalewayMedium;
   font-size: 0.6rem;
@@ -104,6 +104,7 @@ form {
 .search button {
   border: none;
   color: white;
+  text-transform: uppercase;
   font-family: RalewayMedium;
   font-size: 0.6rem;
   background: #4dadbb;
