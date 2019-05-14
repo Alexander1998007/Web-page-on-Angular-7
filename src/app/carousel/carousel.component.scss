@@ -12,8 +12,8 @@
   display: flex;
   justify-content: center;
   font-family: RalewayMedium;
-  font-size: 1.5vw;
-  padding-top: 7vh;
+  font-size: 1.5rem;
+  padding-top: 30px;
   color: #f7f6f9;
 }
 
@@ -21,24 +21,34 @@
   display: flex;
   justify-content: center;
   font-family: RalewayMedium;
-  font-size: 0.8vw;
+  font-size: 0.8rem;
   color: #f7f6f9;
-  margin-top: 2vh;
-}
-
-.carousel
-{
-  margin-top: 10vh;
+  margin-top: 2%;
 }
 
 .carousel-item{
-  margin: 10%;
-  width: 30vw;
-  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: wheat;
+  height: 200px;
+  width: 300px;
 }
 
 image{
   height: auto;
-  widows: 20vw;
+  widows: 10px;
+}
+
+
+.carousel{
+ height: 450px;
+
+}
+
+owl-carousel-o{
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

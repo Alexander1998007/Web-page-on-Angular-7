@@ -1,14 +1,19 @@
 <mat-nav-list>
   <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
-    <span class="nav-caption">ALL PRODUCTS</span>
-  </a>
-  <a mat-list-item routerLink="/owner" (click)="onSidenavClose()">
-    <span class="nav-caption">ABOUT US</span>
+    <mat-icon>shop</mat-icon>
+    <span class="nav-caption">all products</span>
   </a>
   <a mat-list-item routerLink="#" (click)="onSidenavClose()">
-    <span class="nav-caption">LOG IN</span>
+    <mat-icon>contacts</mat-icon>
+    <span class="nav-caption">about us</span>
   </a>
   <a mat-list-item routerLink="#" (click)="onSidenavClose()">
-    <span class="nav-caption">SIGN UP</span>
+    <mat-icon>account_circle</mat-icon>  
+    <span class="nav-caption">log in</span>
+  </a>  
+  <mat-divider></mat-divider>
+  <a mat-list-item routerLink="#" (click)="onSidenavClose()">
+    <mat-icon>account_box</mat-icon>
+    <span class="nav-caption">sign up</span>
   </a>
 </mat-nav-list>
