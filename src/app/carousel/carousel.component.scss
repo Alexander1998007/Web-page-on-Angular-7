@@ -38,12 +38,26 @@ owl-carousel-o {
 }
 
 // редагування формату для всіх активних вкладок на каруселі
-/* ::ng-deep .owl-theme .active {
-} */
+::ng-deep .owl-theme .active {
+  z-index: -1111;
+}
+
+// редагування кнопок переходу
+::ng-deep .owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
 
 // редагування формату для центальної вкладки на каруселі
 ::ng-deep .owl-theme .center .carousel-item {
   background-color: red;
+  transform-origin: center center;
+	-o-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }
 
 ::ng-deep .carousel-item {

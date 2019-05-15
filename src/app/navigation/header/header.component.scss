@@ -55,3 +55,8 @@ img {
   width: 75%;
   height: inherit;
 }
+
+.toolbar{
+  z-index: 1000;
+  transition: all 0.5s;
+}
