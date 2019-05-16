@@ -1,16 +1,19 @@
 <div class="main-div">
   <mat-tab-group animationDuration="0ms">
     <!-- Виводимо всі категорії -->
-    <mat-tab label={{categoriesdata?.name}} *ngFor="let categoriesdata of categoriestestdata">
+    <mat-tab label={{categoty?.name}} *ngFor="let categoty of Categories">
       <!-- проходимось по всіх items -->
-      <div *ngFor="let itemsdata of itemstestdata">
+      <div *ngFor="let item of Items">
         <!-- проходимось по всіх items певної категорії -->
-        <div *ngFor="let cat of categoriesdata?.items">
+        <div *ngFor="let cat of categoty?.items">
           <!-- порівнюємо items певної категорії з id конкретного items -->
-          <div *ngIf="cat === itemsdata?.id" class="item">
-            <div class="title">{{itemsdata?.title}}</div>
-            <div>{{itemsdata?.description}}</div>
-            <div>{{itemsdata?.long_description}}</div>
+          <div *ngIf="cat === item?.id" class="item">
+            <div class="title">{{item?.title}}</div>
+            <div>{{item?.description}}</div>
+            <div>{{item?.long_description}}</div>
+            <div *ngFor="let image of item.gallery_images">
+                <img src={{image.url}} alt="">
+            </div>
           </div>
         </div>
       </div>

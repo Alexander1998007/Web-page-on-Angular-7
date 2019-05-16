@@ -9,14 +9,16 @@ import { TestData } from '../models/test-data';
 })
 export class TaskJSComponent implements OnInit {
 
-  categoriestestdata: TestData[] = [];
-  itemstestdata: TestData[] = [];
+  Categories: TestData[] = [];
+  Items: TestData[] = [];
 
   constructor(private httpService: HttpService) { }
 
   ngOnInit() {
-    this.httpService.getData().subscribe(data => this.categoriestestdata = data["categories"]);
-    this.httpService.getData().subscribe(data => this.itemstestdata = data["items"]);
-
+    this.httpService.getData()
+      .subscribe((data: any) => {
+        this.Categories = data.categories;
+        this.Items = data.items;
+      });
   }
 }
