@@ -16,11 +16,11 @@
               <div>{{item?.description}}</div>
               <div>{{item?.long_description}}</div>
               <div class="img-div">
-              <div *ngFor="let image of item.gallery_images" >
-                <img src="../../assets/images/{{image.url}}" alt="">
+                <div *ngFor="let image of item.gallery_images">
+                  <img src="../../assets/images/{{image.url}}" alt="">
+                </div>
               </div>
-            </div>
-            <!--   <div>
+              <!--   <div>
                 <img src="../../assets/images/{{item.gallery_images[0].url}}" alt="">
               </div> -->
             </div>
@@ -35,12 +35,13 @@
       <div class="title">{{item?.title}}</div>
       <div>{{item?.description}}</div>
       <div>{{item?.long_description}}</div>
-      <div *ngFor="let image of item.gallery_images" class="img-div">
+      <div class="img-div"></div>
+      <div *ngFor="let image of item.gallery_images">
         <img src="../../assets/images/{{image.url}}" alt="">
       </div>
-     <!--  <div>
+    </div>
+    <!--  <div>
         <img src="../../assets/images/{{item.gallery_images[0].url}}" alt="">
       </div> -->
-    </div>
   </ng-template>
 </div>
