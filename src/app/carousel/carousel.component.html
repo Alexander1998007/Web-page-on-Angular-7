@@ -6,40 +6,32 @@
     What our customers told about us
   </div>
   <div class="carousel">
-    <owl-carousel-o [options]="customOptions">
-      <ng-template carouselSlide>
-        <div class="carousel-item">
-          <div class="">
-
-          </div>
-          <p>Слайдер 1</p>
+    <swiper [config]="config">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+         
         </div>
-      </ng-template>
-      <ng-template carouselSlide>
-        <div class="carousel-item">
-          <p>Слайдер 2</p>
+        <div class="swiper-slide">
+      
         </div>
-      </ng-template>
-      <ng-template carouselSlide>
-        <div class="carousel-item">
-          <p>Слайдер 3</p>
+        <div class="swiper-slide">
+          
         </div>
-      </ng-template>
-      <ng-template carouselSlide>
-        <div class="carousel-item">
-          <p>Слайдер 4</p>
+        <div class="swiper-slide">
+        
         </div>
-      </ng-template>
-      <ng-template carouselSlide>
-        <div class="carousel-item">
-          <p>Слайдер 5</p>
+        <div class="swiper-slide">
+          
         </div>
-      </ng-template>
-      <ng-template carouselSlide>
-        <div class="carousel-item">
-          <p>Слайдер 6</p>
+        <div class="swiper-slide">
+         
         </div>
-      </ng-template>
-    </owl-carousel-o>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </swiper>
   </div>
 </div>

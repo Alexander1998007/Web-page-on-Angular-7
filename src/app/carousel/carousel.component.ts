@@ -7,26 +7,15 @@ import { Component } from '@angular/core';
 })
 export class CarouselComponent{
 
-   customOptions: any = {
-    loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    dots: false,
-    navSpeed: 700,
-    navText: ['prev', 'next'],
-    responsive: {
-      10: {
-        items: 1
-      },
-      400: {
-        items: 2
-      },
-      800: {
-        items: 3
-      },
-    },
-    nav: true,
-    center: true
+  config: SwiperOptions = {
+    autoplay: 30, // Autoplay option having value in milliseconds
+    autoplayDisableOnInteraction: false,
+    initialSlide: 3, // Slide Index Starting from 0
+    slidesPerView: 3, // Slides Visible in Single View Default is 1
+    pagination: '.swiper-pagination', // Pagination Class defined
+    paginationClickable: true, // Making pagination dots clicable
+    nextButton: '.swiper-button-next', // Class for next button
+    prevButton: '.swiper-button-prev', // Class for prev button
+    spaceBetween: 0 // Space between each Item
   };
 }

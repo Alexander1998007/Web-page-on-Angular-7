@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
 import { NotFoundComponent } from '../not-found/not-found.component';
+import { TaskJSComponent } from '../task-js/task-js.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'taskJS', component: TaskJSComponent},
   { path: '**', component: NotFoundComponent }
 
 ];

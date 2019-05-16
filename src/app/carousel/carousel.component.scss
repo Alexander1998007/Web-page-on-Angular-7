@@ -27,51 +27,39 @@ image {
 }
 
 .carousel {
-  height: 450px;
-}
-
-owl-carousel-o {
-  height: inherit;
+  height: 400px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-// редагування формату для всіх активних вкладок на каруселі
-::ng-deep .owl-theme .active {
-  z-index: -1111;
+swiper {
+  width: 90%;
+  margin: auto;
 }
 
-// редагування кнопок переходу
-::ng-deep .owl-theme .owl-nav {
-  margin-top: 10px;
-  text-align: center;
-  -webkit-tap-highlight-color: transparent;
+::ng-deep .swiper-slide {
+  
+  background-color: brown;
+  height: 250px;
+  width: 204.667px;
+} 
+
+.swiper-slide.swiper-slide-next {
+  background-color: blueviolet;
+  transform: scale(1.8);
+  z-index: 10;
+  height: 300px;
 }
 
-// редагування формату для центальної вкладки на каруселі
-::ng-deep .owl-theme .center .carousel-item {
-  background-color: red;
-  transform-origin: center center;
-	-o-transform: scale(1.5);
-	-ms-transform: scale(1.5);
-	-moz-transform: scale(1.5);
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
+.swiper-slide.swiper-slide-prev {
+  height: 250px;
 }
 
-::ng-deep .carousel-item {
-  display: flex;
-  justify-content: space-around;
+.swiper-slide.swiper-slide-active{
+  height: 250px;
+}
+
+.swiper-wrapper
+{
   align-items: center;
-  background-color: wheat;
-  margin: 10px;
-  height: 200px;
-  width: 300px;
-}
-
-::ng-deep .owl-carousel .owl-item {
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }

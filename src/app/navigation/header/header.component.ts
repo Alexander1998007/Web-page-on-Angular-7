@@ -7,7 +7,7 @@ declare const window: any;
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent{
+export class HeaderComponent {
   @Output() public sidenavToggle = new EventEmitter();
 
   bgcolor = 'transparent';

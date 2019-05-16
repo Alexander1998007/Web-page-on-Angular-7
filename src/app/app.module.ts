@@ -15,13 +15,14 @@ import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { BottomMenuComponent } from './bottom-menu/bottom-menu.component';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+import { SwiperModule } from 'angular2-useful-swiper';
+import { TaskJSComponent } from './task-js/task-js.component';
 
 @NgModule({
   declarations: [
     AppComponent, SearchComponent, LayoutComponent, HomeComponent, HeaderComponent,
     SidenavListComponent, NotFoundComponent, ProductsComponent, FooterComponent,
-    CarouselComponent, BottomMenuComponent
+    CarouselComponent, BottomMenuComponent, TaskJSComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +30,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    CarouselModule
+    SwiperModule
   ],
 
   providers: [
