@@ -35,9 +35,10 @@
       <div class="title">{{item?.title}}</div>
       <div>{{item?.description}}</div>
       <div>{{item?.long_description}}</div>
-      <div class="img-div"></div>
-      <div *ngFor="let image of item.gallery_images">
-        <img src="../../assets/images/{{image.url}}" alt="">
+      <div class="img-div">
+        <div *ngFor="let image of item.gallery_images">
+          <img src="../../assets/images/{{image.url}}" alt="">
+        </div>
       </div>
     </div>
     <!--  <div>

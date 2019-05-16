@@ -16,6 +16,7 @@ export class CarouselComponent{
     paginationClickable: true, // Making pagination dots clicable
     nextButton: '.swiper-button-next', // Class for next button
     prevButton: '.swiper-button-prev', // Class for prev button
-    spaceBetween: 0 // Space between each Item
+    spaceBetween: 3, // Space between each Item
+    loop: true
   };
 }
