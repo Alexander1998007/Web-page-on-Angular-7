@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.item{
+.item-div1{
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -21,6 +21,17 @@
 }
 
 img{
-    width: 10%;
+    width: 100px;
     height: auto;
+}
+
+.item-div2{
+    padding: 20px;
+    margin: 20px;
+    background-color: aquamarine;
+}
+
+.img-div{
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,22 +1,46 @@
 <div class="main-div">
-  <mat-tab-group animationDuration="0ms">
-    <!-- Виводимо всі категорії -->
-    <mat-tab label={{categoty?.name}} *ngFor="let categoty of Categories">
-      <!-- проходимось по всіх items -->
-      <div *ngFor="let item of Items">
-        <!-- проходимось по всіх items певної категорії -->
-        <div *ngFor="let cat of categoty?.items">
-          <!-- порівнюємо items певної категорії з id конкретного items -->
-          <div *ngIf="cat === item?.id" class="item">
-            <div class="title">{{item?.title}}</div>
-            <div>{{item?.description}}</div>
-            <div>{{item?.long_description}}</div>
-            <div *ngFor="let image of item.gallery_images">
-                <img src= "../../assets/images/{{image.url}}" alt="">
+  <mat-checkbox value="checked" (click)="changeValue(checked)">Відобразити категрії</mat-checkbox>
+  <ng-container *ngIf="checked === true; then checkeddiv; else uncheckeddiv">
+  </ng-container>
+  <ng-template #checkeddiv>
+    <mat-tab-group animationDuration="0ms">
+      <!-- Виводимо всі категорії -->
+      <mat-tab label={{categoty?.name}} *ngFor="let categoty of Categories">
+        <!-- проходимось по всіх items -->
+        <div *ngFor="let item of Items">
+          <!-- проходимось по всіх items певної категорії -->
+          <div *ngFor="let cat of categoty?.items">
+            <!-- порівнюємо items певної категорії з id конкретного items -->
+            <div *ngIf="cat === item?.id" class="item-div1">
+              <div class="title">{{item?.title}}</div>
+              <div>{{item?.description}}</div>
+              <div>{{item?.long_description}}</div>
+              <div class="img-div">
+              <div *ngFor="let image of item.gallery_images" >
+                <img src="../../assets/images/{{image.url}}" alt="">
+              </div>
+            </div>
+            <!--   <div>
+                <img src="../../assets/images/{{item.gallery_images[0].url}}" alt="">
+              </div> -->
             </div>
           </div>
         </div>
+      </mat-tab>
+    </mat-tab-group>
+  </ng-template>
+  <ng-template #uncheckeddiv>
+    <!-- проходимось по всіх items -->
+    <div *ngFor="let item of Items" class="item-div2">
+      <div class="title">{{item?.title}}</div>
+      <div>{{item?.description}}</div>
+      <div>{{item?.long_description}}</div>
+      <div *ngFor="let image of item.gallery_images" class="img-div">
+        <img src="../../assets/images/{{image.url}}" alt="">
       </div>
-    </mat-tab>
-  </mat-tab-group>
+     <!--  <div>
+        <img src="../../assets/images/{{item.gallery_images[0].url}}" alt="">
+      </div> -->
+    </div>
+  </ng-template>
 </div>

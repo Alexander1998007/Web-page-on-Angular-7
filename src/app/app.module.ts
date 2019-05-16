@@ -18,6 +18,7 @@ import { BottomMenuComponent } from './bottom-menu/bottom-menu.component';
 import { SwiperModule } from 'angular2-useful-swiper';
 import { TaskJSComponent } from './task-js/task-js.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     MaterialModule,
     FlexLayoutModule,
     SwiperModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCheckboxModule
   ],
 
   providers: [

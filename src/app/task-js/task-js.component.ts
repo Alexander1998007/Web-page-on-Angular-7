@@ -8,6 +8,8 @@ import { TestData } from '../models/test-data';
   providers: [HttpService]
 })
 export class TaskJSComponent implements OnInit {
+  cat = 1;
+  checked = true;
 
   Categories: TestData[] = [];
   Items: TestData[] = [];
@@ -20,5 +22,10 @@ export class TaskJSComponent implements OnInit {
         this.Categories = data.categories;
         this.Items = data.items;
       });
+  }
+
+  changeValue(value) {
+    this.checked = !value;
+    console.log(this.checked);
   }
 }
