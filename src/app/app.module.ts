@@ -17,6 +17,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { BottomMenuComponent } from './bottom-menu/bottom-menu.component';
 import { SwiperModule } from 'angular2-useful-swiper';
 import { TaskJSComponent } from './task-js/task-js.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TaskJSComponent } from './task-js/task-js.component';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    SwiperModule
+    SwiperModule,
+    HttpClientModule
   ],
 
   providers: [

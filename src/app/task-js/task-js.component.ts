@@ -1,22 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import data from '../../assets/data/test.json';
-
+import { HttpService } from '../services/http.service';
+import { TestData } from '../models/test-data';
 @Component({
   selector: 'app-task-js',
   templateUrl: './task-js.component.html',
-  styleUrls: ['./task-js.component.scss']
+  styleUrls: ['./task-js.component.scss'],
+  providers: [HttpService]
 })
 export class TaskJSComponent implements OnInit {
 
-  word: string;
+  categoriestestdata: TestData[] = [];
+  itemstestdata: TestData[] = [];
 
-  constructor() { }
+  constructor(private httpService: HttpService) { }
 
   ngOnInit() {
-  }
+    this.httpService.getData().subscribe(data => this.categoriestestdata = data["categories"]);
+    this.httpService.getData().subscribe(data => this.itemstestdata = data["items"]);
 
-  somedatafromjson($event): void {
-    this.word = (data as any).name;
-    console.log(this.word);
   }
 }

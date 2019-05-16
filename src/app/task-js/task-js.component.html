@@ -1,4 +1,19 @@
 <div class="main-div">
-  <p>Слово з JSON типу name: {{word}}</p>
-  <button on-click="somedatafromjson($event)">load</button>
+  <mat-tab-group animationDuration="0ms">
+    <!-- Виводимо всі категорії -->
+    <mat-tab label={{categoriesdata?.name}} *ngFor="let categoriesdata of categoriestestdata">
+      <!-- проходимось по всіх items -->
+      <div *ngFor="let itemsdata of itemstestdata">
+        <!-- проходимось по всіх items певної категорії -->
+        <div *ngFor="let cat of categoriesdata?.items">
+          <!-- порівнюємо items певної категорії з id конкретного items -->
+          <div *ngIf="cat === itemsdata?.id" class="item">
+            <div class="title">{{itemsdata?.title}}</div>
+            <div>{{itemsdata?.description}}</div>
+            <div>{{itemsdata?.long_description}}</div>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
 </div>
