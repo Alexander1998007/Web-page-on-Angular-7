@@ -1,0 +1,38 @@
+.main-div{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+.item-div1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    background-color: aquamarine;
+}
+
+.title{
+    font-weight: bold;
+}
+
+img{
+    width: 100px;
+    height: auto;
+}
+
+.item-div2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    background-color: aquamarine;
+}
+
+.img-div{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,62 @@
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-size: 0.5em; //розмір шрифта в хедері
+}
+
+a:hover,
+a:active {
+  color: grey;
+}
+
+.navigation-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+mat-toolbar {
+  position: fixed;
+  height: 50px //висота хедера;
+}
+
+::ng-deep .mat-toolbar.mat-primary {
+  background: transparent;
+  color: black;
+}
+
+@media (max-width: 959px) {
+  mat-toolbar {
+    height: 50px; //висота хедера
+  }
+}
+
+li {
+  font-family: 'RalewayMedium';
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.vl {
+  border-left: 2px solid #b6b7ba;
+  height: 100%;
+}
+
+.last-li {
+  margin-right: 8vw;
+}
+
+.logo {
+  margin-left: 10%;
+  height: inherit;
+}
+
+img {
+  width: 70%;
+  height: inherit;
+}
+
+.toolbar{
+  z-index: 1000;
+  transition: all 0.5s;
+}

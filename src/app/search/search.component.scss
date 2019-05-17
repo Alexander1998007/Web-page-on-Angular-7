@@ -1,0 +1,183 @@
+.main-div {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  font-size: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: inherit;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 2.5em;
+  font-family: "RalewayBold";
+  width: 100%;
+  text-align: center;
+}
+
+.part2 {
+  color: #0e7200;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.part1 {
+  color: #484848;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.innovate {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  color: #484848;
+  margin: 5px;
+  font-size: 0.9em;
+  font-family: "RalewayLight";
+}
+
+.innovate div:nth-child(2)::before {
+  content: "\2022";
+}
+
+.innovate div:nth-child(2):after {
+  content: "\2022";
+}
+
+.search {
+  box-shadow: 7px 7px 24px -15px #000000;
+  height: 50px;
+  width: 54%;
+  margin-top: 20px;
+}
+
+form {
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .search {
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .search {
+    width: 98%;
+  }
+  .flex-container-row {
+    font-size: 98%;
+  }
+}
+
+.search input {
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
+  outline: none;
+  background: white;
+  border-left-width: 1px;
+  border-color: #ffffff;
+  padding: 10px;
+  color: #9e9c9c;
+  font-family: RalewayMedium;
+  font-size: 0.6em;
+  width: 80%;
+  &:focus {
+    outline: none;
+  }
+}
+
+.search button {
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: RalewayMedium;
+  font-size: 0.6em;
+  background: #4dadbb;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  width: 195px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.search mat-form-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px 0 0 8px;
+  text-decoration: none;
+  font-family: RalewayMedium;
+  font-size: 0.6em;
+  color: #838383;
+  height: inherit;
+  background: white;
+  cursor: pointer;
+  width: 150px;
+  &:focus {
+    outline: none;
+  }
+}
+
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-infix {
+  width: 77px;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+  padding-bottom: 0px;
+}
+
+::ng-deep .mat-form-field-infix{
+  border-top: 0px;
+}
+
+::ng-deep .mat-select-value {
+  color: #838383;
+}
+
+.buttons-bottom {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 33px;
+}
+
+.buttons-bottom a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  font-family: RalewayBold;
+  font-size: 0.6em;
+  color: #2d8421;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 18px;
+  width: 133px;
+}
+
+img {
+  height: auto;
+  width: 70%;
+}

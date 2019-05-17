@@ -1,8 +1,8 @@
-* {
-	margin: 0;
-	box-sizing: border-box;
-}
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "assets/fonts/fonts-styles.scss";
 
-body {
-	text-align: center;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
 }

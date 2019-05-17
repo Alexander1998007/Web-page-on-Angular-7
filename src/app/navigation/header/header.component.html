@@ -1,0 +1,29 @@
+<mat-toolbar color="primary" class="toolbar" [ngStyle]="{'background-color': bgcolor}">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div class="logo">
+    <img src="../../../assets/images/logo.png" />
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs fxLayout>
+    <ul fxLayout class="navigation-items">
+      <li>
+        <a routerLink="/taskJS">all products</a>
+      </li>
+      <li>
+        <a routerLink="/owner">about us</a>
+      </li>
+      <li>
+        <a routerLink="/owner">log in</a>
+      </li>
+      <li>
+        <div class="vl"></div>
+      </li>
+      <li class="last-li">
+        <a routerLink="/account">sign up</a>
+      </li>
+    </ul>
+  </div>
+</mat-toolbar>

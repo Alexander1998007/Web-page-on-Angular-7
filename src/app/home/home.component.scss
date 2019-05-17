@@ -1,0 +1,44 @@
+.one {
+	height: 100vh;
+	background-image: url("src/assets/images/background.png");
+	background-position: center;
+	background-size: cover;
+}
+.two {
+	height: 100%;
+	background-color: #f7f7f7;
+}
+.three {
+	background-color: #4dadbb;
+}
+.four {
+	background-color: #323232;
+}
+.five {
+	background-color: #272727;
+}
+
+app-products{
+	height: inherit;
+	width: inherit;
+}
+
+app-footer{
+	height: inherit;
+	width: inherit;
+}
+
+app-carousel{
+	height: inherit;
+	width: inherit;
+}
+
+app-bottom-menu{
+	height: inherit;
+	width: inherit;
+}
+
+app-search{
+	height: inherit;
+	width: inherit;
+}

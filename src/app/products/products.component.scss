@@ -1,0 +1,70 @@
+.main-div {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.str-products {
+  font-family: RalewayMedium;
+  font-size: 1.5em;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.str-list-products {
+  font-family: RalewayMedium;
+  font-size: 0.8em;
+  color: #6d6d6d;
+  margin-top: 1%;
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 220px;
+  font-family: RalewayMedium;
+  font-size: 0.8em;
+  color: #6d6d6d;
+  margin: 25px;
+  padding: 5px;
+  background-color: #ffffff;
+
+}
+
+img {
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+p {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  font-family: RalewayMedium;
+  font-size: 0.7em;
+  color: #62b6c2;
+  margin-bottom: 2%;
+}
